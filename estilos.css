@@ -224,46 +224,111 @@ footer img:hover{
 transform: scale(1.2, 1.2);
 }
 
-/* =========================
-   TABLETS
-========================= */
+/* =========================================
+   RESPONSIVE TABLETS
+========================================= */
 @media screen and (max-width: 1024px){
 
-    section{
-        grid-template-columns: repeat(2,1fr);
+    body{
+        margin: 15px;
     }
 
+    /* HERO */
+    .hero img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    /* MENÚ */
     nav ul{
-        gap: 20px;
         justify-content: center;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    nav a{
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    /* ESTRUCTURA */
+    main{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    /* LIBROS */
+    section{
+        grid-template-columns: repeat(2,1fr);
+        padding: 10px;
+    }
+
+    article img{
+        width: 120px;
+        height: 160px;
+    }
+
+    article img:hover{
+        transform: scale(1.4);
+    }
+
+    /* ASIDES */
+    .aside-izquierdo,
+    .aside-derecho{
+        padding: 15px;
+    }
+
+    .aside-derecho img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    /* HEADER */
+    header h1{
+        font-size: 40px;
+        padding: 15px;
     }
 
     header h1:hover{
-        font-size: 70px;
+        font-size: 60px;
     }
 
-    .hero img{
-        width: 100%;
+    /* FOOTER */
+    footer{
+        font-size: 15px;
     }
 }
 
-/* =========================
-   CELULARES
-========================= */
+
+/* =========================================
+   RESPONSIVE CELULARES
+========================================= */
 @media screen and (max-width: 768px){
 
     body{
-        margin: 10px;
+        margin: 8px;
     }
 
-    main{
-        flex-direction: column;
+    /* HEADER */
+    header h1{
+        font-size: 30px;
+        padding: 15px;
     }
 
-    section{
-        grid-template-columns: 1fr;
+    header h1:hover{
+        font-size: 40px;
     }
 
+    /* HERO */
+    .hero img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    /* MENÚ */
     nav ul{
         flex-direction: column;
         align-items: center;
@@ -272,44 +337,65 @@ transform: scale(1.2, 1.2);
     }
 
     nav a{
-        font-size: 18px;
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    nav a:hover{
+        font-size: 20px;
+    }
+
+    /* CONTENIDO */
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* LIBROS */
+    section{
+        grid-template-columns: 1fr;
         padding: 10px;
     }
 
-    header h1{
-        font-size: 35px;
-        padding: 15px;
+    article{
+        margin: 10px 0;
     }
 
-    header h1:hover{
-        font-size: 45px;
-    }
-
-    .hero img{
-        width: 100%;
-        height: 200px;
+    article img{
+        width: 120px;
+        height: 160px;
     }
 
     article img:hover{
         transform: scale(1.2);
     }
 
+    /* ASIDES */
     .aside-izquierdo,
     .aside-derecho{
+        width: 100%;
         border: none;
+        padding: 15px;
     }
 
     .aside-derecho img{
         width: 100%;
         height: auto;
+        object-fit: cover;
     }
 
+    /* FOOTER */
     footer{
-        font-size: 14px;
+        font-size: 13px;
+        padding: 15px;
     }
 
     footer img{
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
+    }
+
+    footer img:hover{
+        transform: scale(1.1);
     }
 }
