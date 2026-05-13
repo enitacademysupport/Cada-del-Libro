@@ -192,8 +192,8 @@ article h2{
     background-color: rgb(250, 221, 178);
     border-left: 8px solid rgb(189, 38, 0);
     display: flex;
-    justify-content: center; /* centra horizontal */
-    align-items: center;     /* centra vertical */
+    justify-content: center; 
+    align-items: center;     
 }
 
 .aside-derecho img {
@@ -327,3 +327,37 @@ transform: scale(1.2, 1.2);
     }
 }
 
+/* TABLETS */
+@media screen and (max-width: 1024px){
+
+    main{
+        flex-direction: column;
+    }
+
+    section{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .aside-derecho img{
+        width: 70%;
+        height: auto;
+    }
+}
+
+
+/* CELULARES */
+@media screen and (max-width: 768px){
+
+    main{
+        flex-direction: column;
+    }
+
+    section{
+        grid-template-columns: 1fr;
+    }
+
+    .aside-derecho img{
+        width: 100%;
+        height: auto;
+    }
+}
