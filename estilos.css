@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 html{
     border: 8px solid rgb(189, 38, 0);
 }
